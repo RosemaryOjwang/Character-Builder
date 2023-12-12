@@ -1,6 +1,7 @@
 # Character Builder
 
 **_By Rosemary Ojwang_**
+
 **A webpage that helps users create a character for a game.**
 
 ## Technologies Used
