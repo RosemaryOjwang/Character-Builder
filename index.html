@@ -8,12 +8,24 @@
 </head>
 <body>
     <h1>Character Builder</h1>
+    <div class="my-photo">
+        <div class="webCamera">
+            <video id="video">Video stream not available.</video>
+        </div>
+        <div><button id="cameraButton">Take photo</button> </div>
+        <canvas id="canvas"></canvas>
+        <div class="Capture">
+            <img id="photo" alt="The screen capture">
+        </div>
+    </div>
     <form class="character_choices">
         <select>
-            <option value="Superman">Super Man</option>
-            <option value="Ironman">Iron Man</option>
+            <option value="Superman">Superman</option>
+            <option value="Ironman">Ironman</option>
             <option value="Captainamerica">Captain America</option>
-            <option value="Spiderman">Spider Man</option>
+            <option value="Spiderman">Spiderman</option>
+            <option value="Batman">Batman</option>
+            <option value="Hulk">Hulk</option>
         </select>
         <button type="submit" class="btn">Go!</button>
     </form>
