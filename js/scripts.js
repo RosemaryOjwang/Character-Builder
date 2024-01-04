@@ -2,7 +2,7 @@
 
 function displaySuperman()  {
     
-    document.getElementById("avenger1").style.display;
+    document.getElementById("avenger1").style.display = "block";
 }
 
 function displaySpiderman() {
@@ -28,25 +28,25 @@ function displayBatman()    {
 
 //User Interface
 function displayAvenger()   {
-    let Selection = document.getElementById("character");
     let mySelection = characterChoices.character
     let displayCharacter = document.getElementById("avengerName");
-    displayCharacter.innerHTML = mySelection[mySelection.selectedIndex].value;
+    let selection = mySelection[mySelection.selectedIndex].value;
+    displayCharacter.innerText = selection;
     console.log(displayCharacter);
     
     
     
-    if (mySelection === 'Superman') {
+    if (selection === 'Superman') {
         displaySuperman();
-    } else if (mySelection === 'Hulk')  {
+    } else if (selection === 'Hulk')  {
         displayHulk();
-    } else if (mySelection === 'Ironman')   {
+    } else if (selection === 'Ironman')   {
         displayIronman();
-    } else if (mySelection === 'Captainamerica')    {
+    } else if (selection === 'Captainamerica')    {
         displayCaptainAmerica();
-    } else if (mySelection === 'Spiderman') {
+    } else if (selection === 'Spiderman') {
         displaySpiderman();
-    } else if (mySelection === 'Batman')    {
+    } else if (selection === 'Batman')    {
         displayBatman();
     }
 }
@@ -66,7 +66,7 @@ window.onload = (event) => {
     console.log("Page is fully loaded");
     const dropdown = document.getElementById("character");
     dropdown.addEventListener("change", displayAvenger );
-    displayAvenger();
+    //displayAvenger();
 }
 
 
