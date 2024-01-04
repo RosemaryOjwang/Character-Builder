@@ -1,22 +1,50 @@
+//Business logic
+let mySelection = document.getElementById("character").value;
+function displaySuperman()  {
+    
+    document.getElementById("avenger1").style.display;
+}
+
+function displaySpiderman() {
+    document.getElementById("avenger2").style.display;
+}
+
+function displayIronman()   {
+    document.getElementById("avenger3").style.display;
+}
+
+function displayHulk()  {
+    document.getElementById("avenger4").style.display;
+}
+
+function displayCaptainAmerica()    {
+    document.getElementById("avenger5").style.display;
+}
+
+function displayBatman()    {
+    document.getElementById("avenger6").style.display;
+}
+
+
 //User Interface
 function displayAvenger(event)   {
     event.preventDefault();
     
-    let selection = document.getElementById("character").value;
+    
     document.getElementById("avengerName").innerHTML = selection;
     
     if (selection === 'Superman') {
-        document.getElementById("avenger1").style.display;
+        displaySuperman();
     } else if (selection === 'Hulk')  {
-        document.getElementById("avenger4").style.display;
+        displayHulk();
     } else if (selection === 'Ironman')   {
-        document.getElementById("avenger3").style.display;
+        displayIronman();
     } else if (selection === 'Captainamerica')    {
-        document.getElementById("avenger5").style.display;
+        displayCaptainAmerica();
     } else if (selection === 'Spiderman') {
-        document.getElementById("avenger2").style.display;
+        displaySpiderman();
     } else if (selection === 'Batman')    {
-        document.getElementById("avenger6").style.display;
+        displayBatman();
     }
 }
 window.addEventListener("load", function()  {
