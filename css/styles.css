@@ -1,34 +1,10 @@
-/*body  {
-    background-color: #000000;
-    color: #ffffff;
-}*/
+body  {
+    background-color: #ffff00;
+    color: #ec1010;
+}
 h1, p  {
     text-align: center;
 }
-.parts  {
-    grid-row: 5;
-    background-color: yellow;
-}
-.person_head    {
-    grid-row: 1/2;
-    margin-left: 48%;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border-color: #ffffff;
-    background-color: #ffffff;
-}
-.neck   {
-    grid-row: 2/3;
-    margin-left: 49.5%;
-    height: 17px;
-    width: 14px;
-    background-color: white;
-}
-.thorax {
-    grid-row: 3/4;
-    margin-left: 48%;
-    background-color: #ffffff;
-    height: 20px;
-    width: 48px;
+.character_choices > option {
+    color:blue;
 }

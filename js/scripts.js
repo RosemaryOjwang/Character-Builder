@@ -1,7 +1,11 @@
-//Business Logic
-
-//Customer User Interface
-function displayCharacter(event) {
-    event.preventdefault();
-    const character = 
+//User Interface
+function displayAvenger(event)   {
+    event.preventDefault();
+    const avenger = document.querySelector("option#");
+    if (avenger === 'Superman') {
+    
+    }
 }
+
+
+ 

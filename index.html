@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <scripts src="js/scripts.js"></scripts>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    
     <title>Character Builder</title>
 </head>
 <body>
     <h1>Character Builder</h1>
-    <div class="my-photo">
-        <div class="webCamera">
-            <video id="video">Video stream not available.</video>
-        </div>
-        <div><button id="cameraButton">Take photo</button> </div>
-        <canvas id="canvas"></canvas>
-        <div class="Capture">
-            <img id="photo" alt="The screen capture">
-        </div>
+    
+    <div class="output">
+        <img id="avenger" alt="The avenger image will appear here">
     </div>
     <form class="character_choices">
-        <select>
-            <option value="Superman">Superman</option>
-            <option value="Ironman">Ironman</option>
-            <option value="Captainamerica">Captain America</option>
-            <option value="Spiderman">Spiderman</option>
-            <option value="Batman">Batman</option>
-            <option value="Hulk">Hulk</option>
+        <select id="character">
+            <option id="option1" value="Superman">Superman</option>
+            <option id="option2" value="Ironman">Ironman</option>
+            <option id="option3" value="Captainamerica">Captain America</option>
+            <option id="option3" value="Spiderman">Spiderman</option>
+            <option id="option4" value="Batman">Batman</option>
+            <option id="option5" value="Hulk">Hulk</option>
         </select>
         <button type="submit" class="btn">Go!</button>
     </form>
-    <div class="character"></div>
+    
    
 </body>
 </html>
