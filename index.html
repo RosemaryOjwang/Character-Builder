@@ -22,8 +22,8 @@
         <img id="avenger6" src="IMG/Bat_man.png" alt="The avenger image will appear here">
         
     </div>
-    <form id="characterChoices">
-        <select id="character">
+    <form name="avengersForm" id="characterChoices">
+        <select name="character" id="character" onchange="showDropInfo()">
             <option id="options" value="Superman">Superman</option>
             <option id="options" value="Ironman">Ironman</option>
             <option id="options" value="Captainamerica">Captain America</option>
@@ -31,7 +31,7 @@
             <option id="options" value="Batman">Batman</option>
             <option id="options" value="Hulk">Hulk</option>
         </select>
-        <button type="submit" class="btn">Go!</button>
+        
     </form>
     
    

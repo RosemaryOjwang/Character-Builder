@@ -27,33 +27,34 @@ function displayBatman()    {
 
 
 //User Interface
-/*function displayAvenger(event)   {
+function displayAvenger()   {
+    let Selection = document.getElementById("character");
+    let mySelection = characterChoices.character
+    let displayCharacter = document.getElementById("avengerName");
+    displayCharacter.innerHTML = mySelection[mySelection.selectedIndex].value;
+    console.log(displayCharacter);
     
-    event.preventDefault();
-    let mySelection = document.getElementById("character").value;
-    console.log(mySelection);
     
-    document.getElementById("avengerName").innerHTML = mySelection;
     
-    if (selection === 'Superman') {
+    if (mySelection === 'Superman') {
         displaySuperman();
-    } else if (selection === 'Hulk')  {
+    } else if (mySelection === 'Hulk')  {
         displayHulk();
-    } else if (selection === 'Ironman')   {
+    } else if (mySelection === 'Ironman')   {
         displayIronman();
-    } else if (selection === 'Captainamerica')    {
+    } else if (mySelection === 'Captainamerica')    {
         displayCaptainAmerica();
-    } else if (selection === 'Spiderman') {
+    } else if (mySelection === 'Spiderman') {
         displaySpiderman();
-    } else if (selection === 'Batman')    {
+    } else if (mySelection === 'Batman')    {
         displayBatman();
     }
-}*/
+}
 /*window.addEventListener("load", (event) => {
     event.preventDefault();
     console.log("page fully loaded");
 }  /*{
-    const dropdown = document.getElementById("character");
+    
     displayAvenger();
     dropdown.addEventListener("change", function()  {
         alert(this.mySelection);
@@ -63,6 +64,9 @@ function displayBatman()    {
 //);
 window.onload = (event) => {
     console.log("Page is fully loaded");
+    const dropdown = document.getElementById("character");
+    dropdown.addEventListener("change", displayAvenger );
+    displayAvenger();
 }
 
 
