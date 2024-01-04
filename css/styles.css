@@ -5,12 +5,23 @@ body  {
 h1, p  {
     text-align: center;
 }
-#characterChoices > option  {
-    background-color:blue;
+#characterChoices   {
+    text-align: center;
+}
+#characterChoices select    {
+    background-color: #0000ff;
+    color: #ffffff;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.3em;
 }
 .btn    {
-    background-color: blue;
+    background-color: #ff0000;
     border: none;
+    height: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    
 }
 #avenger1, #avenger2, #avenger3, #avenger4, #avenger5, #avenger6    {
     display: none;
