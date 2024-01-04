@@ -1,5 +1,5 @@
 //Business logic
-
+//display Superman image
 function displaySuperman()  {
     
     document.getElementById("avenger1").style.display = "block";
@@ -9,7 +9,7 @@ function displaySuperman()  {
     document.getElementById("avenger5").style.display = "none";
     document.getElementById("avenger6").style.display = "none";
 }
-
+//display Spider-man image
 function displaySpiderman() {
     document.getElementById("avenger2").style.display = "block";
     document.getElementById("avenger1").style.display = "none";
@@ -18,7 +18,7 @@ function displaySpiderman() {
     document.getElementById("avenger5").style.display = "none";
     document.getElementById("avenger6").style.display = "none";
 }
-
+//display Iron Man image
 function displayIronman()   {
     document.getElementById("avenger3").style.display = "block";
     document.getElementById("avenger1").style.display = "none";
@@ -27,7 +27,7 @@ function displayIronman()   {
     document.getElementById("avenger5").style.display = "none";
     document.getElementById("avenger6").style.display = "none";
 }
-
+//display Hulk image
 function displayHulk()  {
     document.getElementById("avenger4").style.display = "block";
     document.getElementById("avenger1").style.display = "none";
@@ -36,7 +36,7 @@ function displayHulk()  {
     document.getElementById("avenger5").style.display = "none";
     document.getElementById("avenger6").style.display = "none";
 }
-
+//display Captain America Image
 function displayCaptainAmerica()    {
     document.getElementById("avenger5").style.display = "block";
     document.getElementById("avenger1").style.display = "none";
@@ -45,7 +45,7 @@ function displayCaptainAmerica()    {
     document.getElementById("avenger4").style.display = "none";
     document.getElementById("avenger6").style.display = "none";
 }
-
+//display Batman image
 function displayBatman()    {
     document.getElementById("avenger6").style.display = "block";
     document.getElementById("avenger1").style.display = "none";
@@ -60,10 +60,10 @@ function displayBatman()    {
 function displayAvenger()   {
     let mySelection = characterChoices.character
     let displayCharacter = document.getElementById("avengerName");
+    //get selection from HTML form
     let selection = mySelection[mySelection.selectedIndex].value;
-    displayCharacter.innerText = selection;
-    console.log(displayCharacter);
-    
+    displayCharacter.innerText = mySelection[mySelection.selectedIndex].text;
+     
     
     
     if (selection === 'Superman') {
@@ -80,23 +80,10 @@ function displayAvenger()   {
         displayBatman();
     }
 }
-/*window.addEventListener("load", (event) => {
-    event.preventDefault();
-    console.log("page fully loaded");
-}  /*{
-    
-    displayAvenger();
-    dropdown.addEventListener("change", function()  {
-        alert(this.mySelection);
-    }, false);
-    console.log(mySelection);*/
-//}
-//);
+
 window.onload = (event) => {
-    console.log("Page is fully loaded");
     const dropdown = document.getElementById("character");
     dropdown.addEventListener("change", displayAvenger );
-    //displayAvenger();
 }
 
 
