@@ -3,26 +3,56 @@
 function displaySuperman()  {
     
     document.getElementById("avenger1").style.display = "block";
+    document.getElementById("avenger2").style.display = "none";
+    document.getElementById("avenger3").style.display = "none";
+    document.getElementById("avenger4").style.display = "none";
+    document.getElementById("avenger5").style.display = "none";
+    document.getElementById("avenger6").style.display = "none";
 }
 
 function displaySpiderman() {
     document.getElementById("avenger2").style.display = "block";
+    document.getElementById("avenger1").style.display = "none";
+    document.getElementById("avenger3").style.display = "none";
+    document.getElementById("avenger4").style.display = "none";
+    document.getElementById("avenger5").style.display = "none";
+    document.getElementById("avenger6").style.display = "none";
 }
 
 function displayIronman()   {
     document.getElementById("avenger3").style.display = "block";
+    document.getElementById("avenger1").style.display = "none";
+    document.getElementById("avenger2").style.display = "none";
+    document.getElementById("avenger4").style.display = "none";
+    document.getElementById("avenger5").style.display = "none";
+    document.getElementById("avenger6").style.display = "none";
 }
 
 function displayHulk()  {
     document.getElementById("avenger4").style.display = "block";
+    document.getElementById("avenger1").style.display = "none";
+    document.getElementById("avenger2").style.display = "none";
+    document.getElementById("avenger3").style.display = "none";
+    document.getElementById("avenger5").style.display = "none";
+    document.getElementById("avenger6").style.display = "none";
 }
 
 function displayCaptainAmerica()    {
     document.getElementById("avenger5").style.display = "block";
+    document.getElementById("avenger1").style.display = "none";
+    document.getElementById("avenger2").style.display = "none";
+    document.getElementById("avenger3").style.display = "none";
+    document.getElementById("avenger4").style.display = "none";
+    document.getElementById("avenger6").style.display = "none";
 }
 
 function displayBatman()    {
     document.getElementById("avenger6").style.display = "block";
+    document.getElementById("avenger1").style.display = "none";
+    document.getElementById("avenger2").style.display = "none";
+    document.getElementById("avenger3").style.display = "none";
+    document.getElementById("avenger4").style.display = "none";
+    document.getElementById("avenger5").style.display = "none";
 }
 
 
