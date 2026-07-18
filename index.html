@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">    
-    <title>Character Builder</title>
-    <script src="js/scripts.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple Character Builder to preview superhero images.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Character Builder</title>
+  <script src="js/scripts.js" defer></script>
 </head>
 <body>
+  <header>
     <h1>Character Builder</h1>
-    
-    <div id="output">
+  </header>
 
-        <p id="avengerName"></p>
-        <img id="avenger1" src="IMG/Super_man.png" alt="The avenger image will appear here">
-        <img id="avenger2" src="IMG/Spider_man.png" alt="The avenger image will appear here">
-        <img id="avenger3" src="IMG/Iron_man.png" alt="The avenger image will appear here">
-        <img id="avenger4" src="IMG/Hulk.png" alt="The avenger image will appear here">
-        <img id="avenger5" src="IMG/Captain_america.png" alt="The avenger image will appear here">
-        <img id="avenger6" src="IMG/Bat_man.png" alt="The avenger image will appear here">
-        
-    </div>
-    <form name="avengersForm" id="characterChoices">
-        <select name="character" id="character">
-            <option id="options" value="Superman">Superman</option>
-            <option id="options" value="Ironman">Iron Man</option>
-            <option id="options" value="Captainamerica">Captain America</option>
-            <option id="options" value="Spiderman">Spider-man</option>
-            <option id="options" value="Batman">Batman</option>
-            <option id="options" value="Hulk">Hulk</option>
-        </select>
-        
+  <main>
+    <section id="output" aria-labelledby="characterLabel">
+      <p id="avengerName" aria-live="polite"></p>
+
+      <figure>
+        <!-- Single image element to be updated by JS -->
+        <img id="avengerImage" src="IMG/Super_man.png" alt="Superman" loading="lazy">
+        <figcaption class="visually-hidden">Live character preview</figcaption>
+      </figure>
+    </section>
+
+    <form id="characterChoices" name="avengersForm">
+      <label for="character" id="characterLabel">Choose a character</label>
+      <select name="character" id="character">
+        <option value="" disabled selected>Select a character</option>
+        <option value="IMG/Super_man.png">Superman</option>
+        <option value="IMG/Iron_man.png">Iron Man</option>
+        <option value="IMG/Captain_america.png">Captain America</option>
+        <option value="IMG/Spider_man.png">Spider-man</option>
+        <option value="IMG/Bat_man.png">Batman</option>
+        <option value="IMG/Hulk.png">Hulk</option>
+      </select>
+
+      <button type="button" id="previewBtn">Preview</button>
     </form>
-    
-   
+  </main>
+
+  <noscript>
+    <p>Please enable JavaScript to preview characters.</p>
+  </noscript>
 </body>
 </html>
